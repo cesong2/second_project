@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <style>
+          table {
+            border: 3px solid rgb(10, 10, 10);
+            border-collapse: collapse;
+          }
+          td,
+          th {
+            border: 2px solid rgb(15, 14, 14);
+            padding: 10px;
+            text-align: left;
+          }
+        </style>
+      </table>
+    <h1>입력 양식</h1>
+    <hr>
+    <table>
+        <tr>
+            <td>텍스트</td>
+            <td colspan="8"><input type="text" name="a" id="a"></td>
+        </tr>
+        <tr>
+            <td>패스워드</td>
+            <td colspan="8"><input type="password" name="b" id="pwd"></td>
+        </tr>
+        <tr>
+            <td>히든</td>
+            <td colspan="8"><input type="hidden" name="id" value="primary key"></td>
+        </tr>
+        <tr>
+            <td>체크박스</td>
+            <td>
+                <input type="checkbox" name="c1" id="id1" value="1">
+                <label for="id1">사과</label>
+                <input type="checkbox" name="c2" id="id2" value="2">
+                <label for="id2">포도</label>
+                <input type="checkbox" name="c3" id="id3" value="3">
+                <label for="id3">참외</label>
+                <input type="checkbox" name="c4" id="id4" value="4">
+                <label for="id4">수박</label>
+            </td>
+        </tr>
+        <tr>
+            <td>셀렉트</td>
+            <td colspan="8"><select name="e" id="">
+                <option value="1">김밥</option>
+                <option value="2">떡볶이</option>
+                <option value="3">순대</option>
+                <option value="4">어묵</option>
+            </select></td></td>
+        </tr>
+        <tr>
+            <td>셀렉트멀티</td>
+            <td colspan="8"><select name="e" id="" multiple>
+                <option value="김밥">김밥</option>
+                <option value="떡볶이">떡볶이</option>
+                <option value="순대">순대</option>
+                <option value="어묵">어묵</option>
+            </select></td></td>
+        </tr>
+        <tr>
+            <td>라디오</td>
+            <td colspan="8"><input type="radio" name="f" id="" value="male">남자<input type="radio" name="f" id="" value="female">여자</td>
+        </tr>
+        <tr>
+            <td>Textarea</td>
+            <td colspan="8"><textarea name="text" id="" cols="40" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td>파일</td>
+            <td colspan="8"><input type="file" value="파일선택"></td>
+        </tr>
+        <tr>
+            <td>버튼</td>
+            <td colspan="8"><input type="button" value="버튼" onclick="alert('버튼을 클릭하였음')"> <input type="submit" value="제출"></td>
+        </tr>
+        <tr>
+            
+            <td colspan="8"><center><input type="submit" value="주문하기">
+                <input type="reset" value="취소하기"></center></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
