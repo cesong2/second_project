@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제</title>
+</head>
+<body>
+    <h3>1에서 100까지의 합</h3>
+    <script>
+        var num1;
+        var sum = 0;
+        for (num1 =1; num1 <=100; num1+=1){
+            sum +=num1;}
+            document.write("1부터 100까지 더하면 " + sum); 
+    </script>
+    <hr>
+    <h3>1에서 100까지 홀수의 합</h3>
+    <script>
+        var num2;
+        var sum2 = 0;
+        for (num2 = 1; num2 <=100; num2+=1){
+            if (num2 %2 !== 0){sum2 +=num2}
+        }
+        document.write("1부터 100까지 홀수 더하면 " + sum2);
+    </script>
+    <hr>
+    <h3>1에서 100까지 짝수의 합</h3>
+    <script>
+        var num3;
+        var sum3 = 0;
+        for (num3 = 1; num3 <=100; num3+=1){
+            if (num3 %2 === 0){sum3 +=num3}
+        }
+        document.write("1부터 100까지 홀수 더하면 " + sum3);
+    </script>
+    <hr>
+    <h3>10! 팩토리얼</h3>
+    <script>
+        var num4;
+        var sum4 = 1;
+        for (num4 = 1; num4 <10; num4+=1){sum4 += sum4*num4
+        }
+        document.write("10! 팩토리얼 값 = " + sum4);
+    </script>
+    <hr>
+    <h3>1에서 얼마까지 더해야 1000이 초과되는가?(while)</h3>
+    <script>
+        var num5 = 1;
+        var sum5 = 0;
+        while (sum5<1000){num5+=1; sum5+=num5;}
+        document.write(num5+'번 더해야함.');
+    </script>
+    <hr>
+    <h3>1에서 얼마까지 더해야 1000이 초과되는가?(for)</h3>
+    <script>
+        var num6 = 0;
+        var sum6;
+        for (sum6 =0; sum6<=1000; sum6+=num6){num6+=1}
+        document.write(num6+'번 더해야함.');
+    </script>
+    <hr>
+    <h3>a+b+c =1000을 만족하는 피타고라스 수</h3>
+    <script>
+        // var a;
+        // var b;
+        // var c;
+        // for(var i=1; i<n; i++){
+        //     a = i;
+        //     var t = n-i;
+        //     c = parseInt((a*a + t*t)/(2*t));
+        //     b = n-a-c;
+        // }
+        // document.write(a,b,c);
+        for (let b=1; b<1000; b++){for(let a= 1; a<b;a++)
+            {c=1000-a-b; if(a*a+b*b==c*c){documnet.write(a,b,c)};break;}}
+    </script>
+
+    <hr>
+    <script>
+        function addnumber(){
+    
+    </script>
+</body>
+</html>

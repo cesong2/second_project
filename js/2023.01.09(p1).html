@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>최소값 구하기</h3>
+    <script>
+      function min() {
+        const testArray = [52, 273, 32, 103, 275, 24, 57];
+        var a;
+        var lmin = testArray[0];
+        i = testArray.length;
+
+        for (a = 0; a <= i; a += 1) {
+          if (testArray[a] < lmin) {
+            lmin = testArray[a];
+          }
+        }
+        console.log(lmin);
+      }
+    </script>
+    <hr />
+    <h3>최대값 구하기</h3>
+    <script>
+      function max() {
+        const testArraym = [52, 273, 32, 103, 275, 24, 57];
+        var a;
+        var lmax = testArraym[0];
+        i = testArraym.length;
+
+        for (a = 0; a <= i; a += 1) {
+          if (testArraym[a] > lmax) {
+            lmax = testArraym[a];
+          }
+        }
+        console.log(lmax);
+      }
+    </script>
+
+    <hr />
+    <h3>선생님 코드</h3>
+    <script>
+      function ansmin(array) {
+        let output = array[0];
+        for (const item of array) {
+          if (output > item) {
+            output = item;
+          }
+          return output;
+        }
+      }
+      const testArray = [52, 273, 32, 103, 275, 24, 57];
+      console.log(`${testArray}중에서`);
+      console.log(`최소값은 = ${ansmin(testArray)}중에서`);
+    </script>
+
+    <hr />
+
+    <h3>new</h3>
+    <!-- <script>
+        function reusesum(add1,add2){
+            var addall= add1+add2;
+            return addall;
+        }
+        A = Number(prompt('X의 값'))
+        B = Number(prompt('Y의 값'))
+        var result = reusesum(A,B)
+        document.write('더한값은=',result)
+    </script> -->
+    <hr />
+    <h3>new1</h3>
+    <script>
+      // const hi = function(){alert('hi?');}
+      // hi()
+      // const hi = () => {alert("반갑습니다");};
+      // hi()
+      let hi = (user) => document.write(user + "님 반갑습니다.");
+      hi("cesong");
+
+      // let sum = function(a,b){return a+b};
+      // document.write('두수의 합은'+sum(5,6))
+    </script>
+    <hr>
+    <script>
+      let sum = (a, b) => a + b;
+      document.write("두수의 합은" + sum(10, 20));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/color.css">
+</head>
+<body>
+    <script>
+        var const_m = Math.ceil(Math.random()*12)
+        var month = Math.ceil(Math.random()*12)
+        var mon = Math.ceil(Math.random()*12)
+        switch(const_m){
+            case 12:case 1:case 2: document.write('<p><strong>겨울</strong></p>')
+            break;
+            case 5:case 4:case 3: document.write('<p><strong>봄</strong></p>')
+            break;
+            case 6:case 7:case 8: document.write('<p><strong>여름</strong></p>')
+            break;
+            case 11:case 10:case 9: document.write('<p><strong>가을</strong></p>')
+            break;
+            default: alert(`${const_m}값으로 오류가 발생하였습니다`)
+        }
+        // switch(parseInt(month/3)) {
+        //     case 1: console.log(month+'월', 겨울)
+        //     break;
+        //     case 2: console.log(month+'월', 봄)
+        //     break;
+        //     case 3: console.log(month+'월', 여름)
+        //     break;
+        //     case 4: console.log(month+'월', 가을)
+        //     break;
+        // }
+    // const mon = parseINt(mon/3);
+    // const season = mon ==1? '봄': mon == 2 ? '여름':  mon ==3? '가을':'겨울'; 
+    // console.log(month,season)
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // const score = math.ceil(Math.random()*50+50)
+      function score() {
+        switch (num) {
+          case 10:
+          case 9:
+            console.log("A 학점");
+            break;
+          case 8:
+            console.log("B 학점");
+            break;
+          case 7:
+            console.log("C 학점");
+            break;
+          case 6:
+            console.log("D 학점");
+            break;
+          default:
+            console.log("F학점");
+        }
+        document.getElementById('p2').innerHTML = `${score}점은${grade}입니다`
+      }
+    </script>
+  </head>
+  <body>
+    <hr />
+    <h3>문제 3.학점계산</h3>
+    <input type="text" id="num" placeholder="score을 입력하세요" />
+    <button onclick="score()">확인</button>
+    <p id="p2"></p>
+  </body>
+</html>

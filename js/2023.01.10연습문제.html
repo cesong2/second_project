@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3><a href="#" onclick="addNode()">당신의 이름은 무엇입니까?</a></h3>
+    <hr />
+    <!-- <div id="info"></div>
+        <form action="">
+            <input type="text" id="subject" autofocus>
+
+        </form>
+        <p id="itemlist"></p> -->
+    <script>
+      function addNode() {
+        const h3 = document.createElement("h3");
+        h3.classList.add("class명1", "class명2");
+        const textNode = document.createTextNode("홍길동");
+        h3.appendchild(textNode);
+        document.body.appendchild(h3);
+        // var newP = document.createElement('p');
+        // var subject = document.querySelector("subject")
+        // var txtNode = document.createTextNode(subject.value);
+        // newP.appendChild(txtNode);
+        // document.getElementById("info").appendChild(newP)
+        // var itemlist = document.querySelector("#itemlist");
+        // itemlist.insertBefore(newP, itemlist.childNodes[0])
+      }
+    </script>
+  </body>
+</html>
